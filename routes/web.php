@@ -3,7 +3,7 @@
 use App\Livewire\Auth\Login;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', Login::class);
+Route::get('/', Login::class)->name('login');
 
 Route::get('/admin', function(){
     return 'login admin';
